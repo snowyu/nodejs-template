@@ -1,3 +1,5 @@
+const { engines: { node } } = require('./package.json')
+
 const presets = [
   ['@babel/env', {
     // Require the highest node version you can.
@@ -5,7 +7,9 @@ const presets = [
     // supports async/await because Babel has been
     // configured without polyfills/generators for
     // async/await.
-    targets: { node: '12.0.0' }
+    targets: {
+      node: node.substring(2) // Strip `>=`
+    }
   }],
   // If you are not using flow remove the following line.
   '@babel/preset-flow',

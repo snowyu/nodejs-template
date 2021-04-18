@@ -10,6 +10,9 @@
     "prepare": "npm i --no-save jsdoc-to-markdown jsdoc docdash nps flow-typed flow-bin typescript",
     "test": "nps test"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
     "@babel/core": "^7.13.15",

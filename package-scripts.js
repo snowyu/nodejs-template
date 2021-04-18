@@ -35,7 +35,7 @@ module.exports = {
     build: {
       default: {
         description: 'deletes the `lib` directory and transpiles all relevant `src` to the `lib`',
-        script: series(cleanDist, transpile, 'build.ts'),
+        script: series(cleanDist, transpile, 'nps build.ts'),
       },
       ts: 'tsc lib/**/*.js --declaration --allowJs --emitDeclarationOnly --outDir types',
       watch: 'nps "build --watch"'
