@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nps",
-    "prepare": "npm i --no-save jsdoc-to-markdown jsdoc docdash nps flow-typed flow-bin",
+    "prepare": "npm i --no-save jsdoc-to-markdown jsdoc docdash nps flow-typed flow-bin typescript",
     "test": "nps test"
   },
   "devDependencies": {
